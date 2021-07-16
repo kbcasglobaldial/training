@@ -1,0 +1,37 @@
+body {
+	background-color: #F5F5F5;
+	font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+	
+	text-align: center;
+	background-color: #F5F5F5;
+
+
+}
+
+.gds {
+
+	background: url("test.jfif") no-repeat 0px -3px;
+	display: block;
+	padding-top: 30px;
+	height: 20px;
+
+}
+
+img {
+	padding-left: 15%;	
+}
+
+#s1 {
+	height: 200px;
+		background-image: url(Look.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-color: #F5F5F5;
+}
+section {
+	padding-left: 20px;
+}

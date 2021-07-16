@@ -1,0 +1,91 @@
+body {
+    background-color: #F5F5F5;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    background-color: #F5F5F5;
+}
+
+#animation {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+table {
+    font-family: 'Roboto', sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+    height: 100%;
+    float: right;
+    margin-right: 60px;
+    margin-left: 60px;
+    font-size: 15px;
+}
+
+.gds {
+
+    background: url("test.jfif") no-repeat 0px -3px;
+    display: block;
+    padding-top: 30px;
+    height: 20px;
+
+}
+
+td,
+tr {
+    border: 1px solid #dddddd;
+    text-align: center;
+
+}
+
+tr:nth-child(odd) {
+    background-color: #9ED9CCFF;
+}
+
+#do_not:nth-child(odd) {
+    background-color: #FFDDE2FF;
+}
+
+tr:hover {
+    text-shadow: -.25px -.25px 0 black,
+        .25px .25px black;
+}
+
+#do {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+
+#dont {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 50%;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+
+}
+
+
+
+h2 {
+    display: inline;
+    text-align: center;
+    background-color: #F5F5F5;
+    margin-left: 600px;
+}
+
+#RTR {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #F5F5F5;
+
+
+}

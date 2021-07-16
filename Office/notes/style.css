@@ -1,0 +1,103 @@
+body {
+    background-color: #F5F5F5;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    background-color: #F5F5F5;
+}
+
+#Entered {
+    color: red;
+}
+#dispositions {
+    color: #5DADE2;
+}
+#golden {
+    color: gold;
+}
+
+#color {
+    background-color: #F5F5F5;
+}
+
+h2 {
+    display: inline;
+    text-align: center;
+    background-color: #F5F5F5;
+    padding-left: 50%;
+}
+
+.gds {
+
+    background: url("test.jfif") no-repeat 0px -3px;
+    display: block;
+    padding-top: 30px;
+    height: 20px;
+
+}
+
+#s1 {
+    height: 300px;
+    background-image: url(team.jfif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: #F5F5F5;
+}
+
+section {
+    background-color: #F5F5F5;
+    padding-left: 20px;
+}
+
+p {
+    background-color: #F5F5F5;
+}
+
+
+#Entered {
+    color: red;
+
+}
+
+#note {
+    color: #404040;
+}
+
+#dispositions {
+    color: #5DADE2;
+
+}
+
+#without {
+    color: #FF0000;
+
+}
+
+#checkbox {
+    color: #FF0000;
+}
+
+#star {
+    color: red;
+}
+
+audio {
+    width: 140px;
+    height: 15px;
+}
+
+#golden {
+    color: gold;
+    background-color: #F5F5F5;
+}
+
+#foreign_language_ivr_green {
+    color: limegreen;
+}
+
+#foreign_language_ivr_yellow {
+    color: orange;
+    font-weight: bolder
+}

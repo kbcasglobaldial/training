@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Notes</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bangers|Dancing+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand gds" href="/Office/process%20trainings/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul id="dropdown-menu" class="nav navbar-nav">
+				<li><a href="/Office/process%20trainings/">Home</a></li>
+				<li><a href="/Office/phonetics/">Phonetics</a></li>
+				<li><a href="/Office/scripts/">Scripts</a></li>
+				<li><a href="/Office/force%20call%20exits/">Force Call Exit Script</a></li>
+				<li><a href="/Office/notes/">Notes</a></li>
+				<li><a href="/Office/dispositions/">Disposition</a></li>
+				<li><a href="/Office/faqs/">FAQs</a></li>
+				<li><a href="/Office/what's%20new/">What's New</a></li>
+				<li><a href="/Office/do's%20n%20dont's/">Do's and Dont's</a></li>
+			</ul>
+		</div>
+
+	</nav>
+	<section>
+		<div id="color">
+			<h2>Notes</h2>
+			<h4><span id="note">DNC and Call Alert Notes </span><span id="Entered">(Entered in the call alert box only and not in the notes section **)</span></h4>
+			<p>
+
+				Force Call Exit<br>
+				GK Requested DNC – multiple calls<br>
+				GK Requested DNC – additional information required<br>
+				GK Requested DNC – Other<br>
+				Revealed correct campaign details to the Prospect<br>
+				Prospect requested DNC<br>
+				Prospect said not interested<br>
+				RPC agreed to the incorrect last name and company name<br><br>
+
+				<span id="star">**</span><span>If RPC opens the call with Hello/Company name and after graceful exit, requests DNC, we need to enter notes for Graceful Exit in the notes section first before entering the call alert DNC notes.</span><br><br>
+
+				Example:<br>
+				<span>Notes section – RPC answered directly with Hello (Male)</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><audio controls="controls">
+						<source src="Graceful%20Exit%20Example.mp3" type="audio/mp3">
+					</audio></span><br>
+				Call Alert Box – Prospect requested DNC
+
+			</p>
+
+			<br>
+
+			<h4><span id="note">Note for IVR Situation with DBN/ASD</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="dispositions">(Disposition - 1st attempt as Voicemail and 2nd attempt as Research Error)</span></h4>
+			<p>Name not found on DBN/ASD, try for Operator</p>
+			<p>Name not found on DBN/ASD and no option for operator</p><br></div>
+			<h4><span id="note">Note for IVR Situation </span><span id="without">without DBN/ASD<span id="note"> (1st Attempt)</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="dispositions">(Disposition –Research Error)</span></h4>
+			<p>No option for DBN/ASD/Operator</p> <br>
+			<h4><span id="note">Notes for Graceful Exit Scenarios</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="dispositions">(Disposition – Not Available)</span></h4>
+			<h5><span id="golden">When RPC opens the call directly</span>&nbsp;<span id="checkbox">(Checkbox “Direct Call” to be checked also)</span></h5>
+			<p>RPC answered directly with Hello (Male)<br>
+				RPC answered directly with Hello (Female)<br>
+				RPC answered directly with Company Name (Male)<br>
+				RPC answered directly with Company Name (Female) </p>
+
+			<h5 id="golden">When GK transferred the call to RPC</h5>
+			<p>GK transferred, got live voice of RPC who said Hello (Male)<br>
+				GK transferred, got live voice of RPC who said Hello (Female)<br>
+				GK transferred, got live voice of RPC who said company name (Male)<br>
+				GK transferred, got live voice of RPC who said company name (Female) </p>
+
+			<h5 id="golden">When IVR/Extension redirected the call to RPC</h5>
+			<p>Through IVR, got live voice of RPC who said Hello (Male)<br>
+				Through IVR, got live voice of RPC who said Hello (Female)<br>
+				Through IVR, got live voice of RPC who said company name (Male)<br>
+				Through IVR, got live voice of RPC who said company name (Female) </p><br>
+			<h4><span id="note">Note for information not confirmed</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="dispositions">(Disposition – Not Available)</span></h4>
+			<p><span>GK/Person said no one by that name and hung-up before confirming any other details</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="dispositions">(2nd Attempt – Disposition changes to Research Error)</span><br>
+				<span>GK/Person said wrong number and hung-up before confirming any other details.</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="dispositions">(2nd Attempt – Disposition changes to Wrong Number Remove)</span>
+			</p><br>
+			<h4><span id="note">Note for RPC Deceased</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="dispositions">(Disposition – Research Error)</span></h4>
+			<p><span>RPC Deceased</span>
+			</p><br>
+			<h4><span id="note">Note for Foreign Language IVR</span>&nbsp;&nbsp;&nbsp;<span id="dispositions">(Disposition – Voicemail)<br>
+				</span></h4>
+			<p>Foreign Language IVR</p>
+			<p id="foreign_language_ivr_green">We need to exhaust the below mentioned steps: <br>
+				1. Choose an option (If Any) to convert the IVR from “Foreign Language” to “English Language” which would help to explore further to reach the prospect/operator.<br>
+				2. If there is no option to change the language then stay on the IVR for 1 minute at the most as it will probably connect to the live person automatically.<br>
+				3. If Action 2 fails then try and reach the operator by pressing ‘0’ immediately (Do not wait further if IVR repeats itself or connects to a dead air before or after pressing ‘0’)</p><br>
+
+			<p id="foreign_language_ivr_yellow">Note: Agent should not enter notes in any other scenarios apart from the ones mentioned above. <br><br>
+				Also, In case of multiple, we only attempt the number dialed by default and dispose as per the outcome.</p>
+		</div>
+	</section>
+
+</body>
+
+</html>

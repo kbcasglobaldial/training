@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Script</title>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bangers|Dancing+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand gds" href="/Office/process%20trainings/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul id="dropdown-menu" class="nav navbar-nav">
+				<li><a href="/Office/process%20trainings/">Home</a></li>
+				<li><a href="/Office/phonetics/">Phonetics</a></li>
+				<li><a href="/Office/scripts/">Scripts</a></li>
+				<li><a href="/Office/force%20call%20exits/">Force Call Exit Script</a></li>
+				<li><a href="/Office/notes/">Notes</a></li>
+				<li><a href="/Office/dispositions/">Disposition</a></li>
+				<li><a href="/Office/faqs/">FAQs</a></li>
+				<li><a href="/Office/what's%20new/">What's New</a></li>
+				<li><a href="/Office/do's%20n%20dont's/">Do's and Dont's</a></li>
+			</ul>
+		</div>
+
+	</nav>
+	<section>
+
+		<h2>Script</h2>
+		<h3 id="heading">Basic Script</h3>
+
+
+
+		<p>Situation 1 – If Gatekeeper opens the call:
+
+			Gatekeeper: How may I direct your call?<br>
+			Agent: Could you please connect me to Mike Smith (RPC’s name)?<br><br>
+
+			Gatekeeper: May I know who is calling?<br>
+			Agent: This is Sean [agent first name ONLY] calling on behalf of Howard Strauss [pitcher name].<br><br>
+
+			Gatekeeper: What is this regarding?<br>
+			Agent: I am an assistant to Howard and Howard asked me to contact Mike and transfer the call once I manage to get him online.<br><br>
+			Gatekeeper (still insisting for the reason): What is this regarding?<br>
+			Agent: I am not privy to the substance of the call, Howard asked to contact Mike and connect the call once I manage to get him online.<br><br>
+
+			Gatekeeper: Where are you calling from? / Which company are you calling from? / Which organisation are you calling from?<br>
+			Agent: Howard’s with [Essential Records Corporation]<br><br>
+
+			Gatekeeper: Connecting through.<br>
+			Mike Smith: Hi, this is Mike. (Agent transfers the call)<br><br>
+
+
+			Situation 2 – If RPC opens the call directly:
+
+			Mike Smith: Hi, this is Mike. (Agent transfers the call)<br><br>
+
+			<span class="green">Notes Required</span> – <span>No</span><br>
+			<span class="green">Disposition</span> – <span>No, call gets disposed automatically.</span><br><br>
+		</p>
+
+
+		<h3 id="heading">Graceful Exit Scenario</h3>
+
+
+		<p><span class="blue">Situation 1 – Gatekeeper connects the call to RPC and RPC opens the call with either the company name or just “Hello”:</span><br><br>
+
+
+			Gatekeeper: How may I direct your call?<br>
+			Agent: Could you please connect me to Mike Smith (RPC’s name)?<br><br>
+
+			Gatekeeper: May I know who is calling?<br>
+			Agent: This is Sean [agent first name ONLY] calling on behalf of Howard Strauss [pitcher name].<br><br>
+
+
+			Gatekeeper connects the call to Mike<br><br>
+			Mike: Hi XYZ Corporation<br>
+			Or<br>
+			Mike: Hello<br><br>
+			Agent: Could you please connect me to Mike<br>
+			Mike: This is he/This is Mike.<br><br>
+			Agent: Is this Mike Anderson? (Agent changes the last name if only first name was asked)<br>
+			Mike: No, this is Mike Smith.<br><br>
+			Agent: I am sorry, I think I have some wrong information, thanks for your time. (Let the RPC hang up the call or once RPC says “No problem”, we can hang up the call)<br><br>
+
+			Or<br><br>
+			Agent: Could you please connect me to Mike Smith?<br>
+			Mike: This is he. / This is Mike.<br><br>
+			Agent: Mike, have I reached Alpine Technologies? (Agent changes the company name if full name was asked)<br>
+			Mike: No, this is XYZ Corporation.<br><br>
+			Agent: I am sorry, I think I have some wrong information, thanks for your time. (Let the RPC hang up the call or once RPC says “No problem”, we can hang up the call).<br><br>
+
+			<span class="green">Notes Required</span> – <span>Yes, (Details of Notes)</span><br>
+			<span class="green">Disposition</span> – <span>Not Available</span><br><br>
+			Over subsequent attempt, when Gatekeeper transfers the call and a person opens the call matching the situation mentioned in the previous notes, agent needs to transfer the call.<br><br>
+
+			<span class="blue">Situation 2 – Direct number for RPC and RPC opens the call with either the company name or just “Hello”:</span><br><br>
+
+			Mike: Hi XYZ Corporation<br>
+			Or<br>
+			Mike: Hello<br>
+			Agent: Could you please connect me to Mike<br>
+			Mike: This is he/This is Mike.<br>
+			Agent: Is this Mike Anderson? (Agent changes the last name if only first name was asked)<br>
+			Mike: No, this is Mike Smith.<br>
+			Agent: I am sorry, I think I have some wrong information, thanks for your time. (Let the RPC hang up the call or once RPC says “No problem”, we can hang up the call)<br><br>
+
+			Or<br>
+			Agent: Could you please connect me to Mike Smith?<br>
+			Mike: This is he. / This is Mike.<br>
+			Agent: Mike, have I reached Alpine Technologies? (Agent changes the company name if full name was asked)<br>
+			Mike: No, this is XYZ Corporation.<br>
+			Agent: I am sorry, I think I have some wrong information, thanks for your time. (Let the RPC hang up the call or once RPC says “No problem”, we can hang up the call)<br><br>
+			<span class="green">Notes Required</span> – <span>Yes (Details of Notes)</span><br>
+			<span class="green">Disposition</span> – <span>Not Available</span><br>
+			Agent needs to flag the call as a direct call by clicking the checkbox “Direct Call”.<br><br>
+
+			<span class="blue">Situation 3 –RPC agrees to the Incorrect Last Name and Incorrect Company Name:</span><br><br>
+
+
+			Agent: Could you please connect me to Mike<br>
+			Mike: This is he. / This is Mike.<br>
+			Agent: Is this Mike Anderson? (Agent changes the last name if only first name was asked)<br>
+			Mike: Yes.<br>
+			Agent: Mike, have I reached Alpine Technologies? (Agent changes the company name if RPC agreed to incorrect Last Name)<br>
+			Mike: Yes.<br>
+			Agent: This is Sean [agent first name ONLY] calling from Digital Telecom Services and we are conducting a survey regarding the phone lines. Would you be interested?<br>
+			Mike: No, I am not interested.<br>
+			Agent: Thank you for your time. Have a nice day. (End the call)<br>
+			Or<br>
+			Mike: Yes, I am interested in the survey.<br>
+			Agent: Alright, so how many phone lines do you have?<br>
+			Mike: I have 20 phone lines.<br>
+			Agent: Which service provider are you using currently?<br>
+			Mike: AT&T<br>
+			Agent: How much do you pay every month?<br>
+			Mike: I pay around $200<br>
+			Agent: Thank you for your time. Have a nice day. (End the call)<br><br>
+
+			<span class="green">Notes Required</span> – <span>Yes, but to be put in the Call Alert pop-up box (Details of Notes)</span><br>
+			<span class="green">Disposition</span> – <span>Do Not Call</span><br>
+			Agent needs to flag the call as a direct call by clicking the checkbox “Direct Call”.<br><br>
+		</p>
+
+		<h3 id="heading">Person Left Remove</h3>
+		<p>Gatekeeper: How may I direct your call?<br>
+			Agent: Could you please connect me to Mike Smith (RPC’s name)?<br><br>
+
+			Gatekeeper: Mike used to work here 2 years ago OR <br>
+			Mike is no longer with us/the company OR <br>
+			Mike is working in a different company (which is not related to the present company) OR <br>
+			Mike is retired <br>
+			Agent: Ok, thank you for that information (Should never reconfirm the company name)<br><br>
+
+			<span class="green">Notes Required</span> – <span>No</span><br>
+			<span class="green">Disposition</span> – <span>Person Left Remove</span><br><br>
+		</p>
+
+		<h3 id="heading">Research Error</h3>
+		<p>Gatekeeper: How may I direct your call?<br>
+			Agent: Could you please connect me to Mike Smith (RPC’s name)?<br><br>
+
+			Gatekeeper: We don’t have anyone by that name.<br>
+			Agent: Ok, have I reached XYZ Corporation (RPC’s company name) {Agent can skip this step if GK/IVR opens the call with same company name as mentioned on the lead}<br><br>
+			Gatekeeper: Yes.<br>
+			Agent: Ok, I have his job title as (RPC’s Job Title).<br><br>
+			Gatekeeper: We don’t have anyone by that name/I cannot search with the Job Title.<br>
+			Agent: Ok, I am sorry, I think I have some wrong information, thanks for your time.<br><br>
+			<span class="green">Notes Required</span> – <span>No</span><br>
+			<span class="green">Disposition</span> – <span>Research Error</span><br><br>
+		</p>
+
+		<h3 id="heading">Wrong Number Remove</h3>
+		<p>Gatekeeper: How may I direct your call?<br>
+			Agent: Could you please connect me to Mike Smith (RPC’s name)?<br><br>
+
+			Gatekeeper: We don’t have anyone by that name.<br>
+			Agent: Ok, have I reached XYZ Corporation (RPC’s company name) <br><br>
+			Gatekeeper: No.<br>
+			Agent: Ok, I am sorry, I think I have some wrong information, thanks for your time.<br><br>
+			<span class="green">Notes Required</span> – <span>No</span><br>
+			<span class="green">Disposition</span> – <span>Wrong Number Remove</span><br>
+		</p>
+
+
+		<h3 id="heading">Not Available</h3>
+		<p>Gatekeeper: How may I direct your call?<br>
+			Agent: Could you please connect me to Mike Smith (RPC’s name)?<br><br>
+
+			Gatekeeper: I am sorry but he is … “not at his desk” or “busy on another call” or “not available” or “on a vacation”.<br>
+			Agent: Ok, thank you for that information.<br><br>
+
+			Or<br><br>
+
+			Gatekeeper: I am sorry but he is … “not at his desk” or “busy on another call” or “not available” or “on a vacation”. May I get your name and number; I’ll have (RPC Name) call you back.<br>
+			Agent: That’s ok. I’ll call back later. Thanks.<br><br>
+
+			Or<br><br>
+
+			Gatekeeper: I am sorry but he is … “not at his desk” or “busy on another call” or “not available” or “on a vacation”. Would you like his voicemail?<br><br>
+
+			If Leave Voicemail button is active<br><br>
+			Agent: Sure, that’ll be great.<br>
+			(Agent needs to listen to the voicemail and click on Leave Voicemail Button after the BEEP.)<br><br>
+			<span class="green">Notes Required</span> – <span>No, an automatic note “Voicemail Left” gets generated.</span><br>
+			<span class="green">Disposition</span> – <span>Voicemail Dropped Active</span><br><br>
+
+			If Leave Voicemail button is not active<br>
+			Agent: That’s ok. I’ll call back later. Thanks.<br><br>
+
+			<span class="green">Notes Required</span> – <span>No</span><br>
+			<span class="green">Disposition</span> – <span>Not Available</span><br><br>
+		</p>
+
+
+
+
+		<h3 id="heading">Do Not Call</h3>
+		<p>Gatekeeper: How may I direct your call?<br>
+			Agent: Could you please connect me to Mike Smith (RPC’s name)?<br><br>
+
+			Gatekeeper: You keep calling us day in and out and I have asked you several times not to call us.<br>
+			Agent: I apologize for the inconvenience, I’ll make sure that we don’t call you anymore.<br><br>
+			<span class="green">Notes Required</span> – <span>Yes, but to be put in the Call Alert pop-up box (Details of Notes)</span><br>
+			<span class="green">Disposition</span> – <span>Do Not Call</span><br><br>
+		</p>
+
+
+
+
+		<h3 id="heading">Does not work here</h3>
+		<p>Gatekeeper: How may I direct your call?<br>
+			Agent: Could you please connect me to Mike Smith (RPC’s name)?<br><br>
+
+			Gatekeeper: He does not work here.<br>
+			Agent: So is he at a different location or no longer with the company?<br><br>
+			Scenario 1<br>
+			Gatekeeper: He is no longer with the company.<br>
+			Agent: Ok, thank you for that information.<br><br>
+			<span class="green">Notes Required</span> – <span>No</span><br>
+			<span class="green">Disposition</span> – <span>Person Left Remove</span><br><br>
+			Scenario 2<br>
+			Gatekeeper: He works at a different location.<br>
+			Agent: Is it possible to transfer this call to that location.<br><br>
+			Gatekeeper: No.<br>
+			Agent: ok, thank you for your time.<br><br>
+			<span class="green">Notes Required</span> – <span>No</span><br>
+			<span class="green">Disposition</span> – <span>Target in different location</span><br><br>
+		</p>
+
+
+
+
+
+		<h3 id="heading">No one by that name at this facility/location</h3>
+		<p>Gatekeeper: How may I direct your call?<br>
+			Agent: Could you please connect me to Mike Smith (RPC’s name)?<br><br>
+
+			Gatekeeper: We don’t have anyone by that name at this facility/location<br>
+			Agent: So is he at a different location.<br><br>
+			Scenario 1<br>
+			Gatekeeper: I don’t know. / I am not sure.<br>
+			Agent: And just to confirm, have I reached (RPC's Company)?<br><br>
+			Gatekeeper: Yes.<br>
+			Agent: ok, thank you for your time.<br><br>
+			<span class="green">Notes Required</span> – <span>No</span><br>
+			<span class="green">Disposition</span> – <span>Research Error</span><br><br>
+			Scenario 2<br><br>
+			Gatekeeper: Yes, he is at a different location.<br>
+			Agent: Is it possible to transfer this call to that location.<br>
+			Gatekeeper: No.<br>
+			Agent: ok, thank you for your time.<br><br>
+			<span class="green">Notes Required</span> – <span>No</span><br>
+			<span class="green">Disposition</span> – <span>Target in different location</span><br><br>
+		</p>
+
+
+
+
+		<h3 id="heading">Gatekeeper Block</h3>
+		<p>Gatekeeper: How may I direct your call?<br>
+			Agent: Could you please connect me to Mike Smith (RPC’s name)?<br><br>
+
+			Gatekeeper: Do you have an appointment or is (RPC’s name) expecting you call?<br>
+			Agent: No, this is Sean [agent first name ONLY] calling on behalf of Howard Strauss [pitcher name] and Howard asked me to contact Mike and transfer the call once I manage to get him online.<br><br>
+			Gatekeeper: What is this regarding?<br>
+			Agent: I am not privy to the substance of the call, Howard asked to contact Mike and connect the call once I manage to get him online.<br><br>
+
+			Gatekeeper: Mike does not take a call without prior appointment.<br>
+			Agent: Ok, in that case, let me get back to you with some more information.<br><br>
+			<span class="green">Notes Required</span> – <span>No</span><br>
+			<span class="green">Disposition</span> – <span>Gatekeeper Block</span><br><br>
+
+			Or<br>
+			Gatekeeper: How may I direct your call?<br>
+			Agent: Could you please connect me to Mike Smith (RPC’s name)?<br><br>
+
+			Gatekeeper: May I know who is calling?<br>
+			Agent: This is Sean [agent first name ONLY] calling on behalf of Howard Strauss [pitcher name].<br><br>
+
+			Gatekeeper: What is this regarding?<br>
+			Agent: I am an assistant to Howard and Howard asked me to contact Mike and transfer the call once I manage to get him online.<br><br>
+			Gatekeeper (still insisting for the reason): Why does Howard want to speak to Mike / Is this a sales call / Is this a personal or business call?<br>
+			Agent: I am not privy to the substance of the call, Howard asked to contact Mike and connect the call once I manage to get him online.<br><br>
+
+			Gatekeeper: Which City/State/Country are you calling from or What does your company do?<br>
+			Agent: I am sorry, I am not authorized to disclose that information.<br><br>
+
+			Gatekeeper: I cannot transfer the call until you give me more information or the reason of the call.<br>
+			Agent: Ok, in that case, let me get back to you with some more information.<br><br>
+			<span class="green">Notes Required</span> – <span>No</span><br>
+			<span class="green">Disposition</span> – <span>Gatekeeper Block</span>
+
+		</p>
+	</section>
+</body>
+
+</html>
